@@ -123,9 +123,9 @@ resource "kubernetes_ingress_v1" "sample-app" {
     name      = "sample-app"
     namespace = "sample-app"
     annotations = {
-      "cert-manager.io/cluster-issuer"             = "letsencrypt"
+      "cert-manager.io/cluster-issuer" = "letsencrypt"
       # "nginx.ingress.kubernetes.io/rewrite-target" = "/"
-      "kubernetes.io/ingress.class"                = "nginx"
+      "kubernetes.io/ingress.class" = "nginx"
     }
   }
   spec {
